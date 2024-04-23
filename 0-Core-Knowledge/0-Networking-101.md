@@ -15,73 +15,75 @@
 # 1. Введение
 
 ## Да что, чёрт побери, такое эта ваша Сеть?
-Если в кратце, сеть состоит из 2х или более компьютеров, которые соединены, чтобы обмениваться данными. Компьютерные сети это базис коммуникации в IT. They are used in a huge variety of ways and can include many different types of network. A computer network is a set of computers that are connected together so that they can share information. The earliest examples of computer networks are from the 1960s, but they have come a long way in the half-century since then.
+Если в кратце, сеть состоит из 2х или более компьютеров, которые соединены, чтобы обмениваться данными. Компьютерные сети это базис коммуникации в IT. Они могут использоваться огромным количеством способов и могут включать много различных типов сетей. Компьютерная сеть это набор комьютеров, соединённых вместе так, что они могут обмениваться информацией. наиболее ранние экземпляры компьютерных сетей датируются 1960ми, но за следующие пол столетия они прошли огромный путь развития.
 
 ![net](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/5edc8fbef915a17c93fa91c95877134c8fac324c/net2.jpg)
 
-<sub><sup>LAN Network Topology - SOHO / Small Home Network</sup></sub>
+<sub><sup>Сетевая топология LAN - SOHO / Small Office Home Office</sup></sub>
 
-**Two very common types of networks include: LAN (Local Area Network) and WAN (Wide Area Network)**
+**Два самых распространённых типа сетей называются LAN (Local Area Network) и WAN (Wide Area Network)**
 
-## Topologies
-There are many different types of network, which can be used for different purposes and by different types of people and organization. Here are some of the network types that you might come across:
+## Топологии
+Существое много различных типов сетей, которые могут использоваться для различных целей разными людьми и организациями. Вот некоторые типы сетей с которыми вы можете столкнуться:
 
-### LAN - Local Area Network
+### LAN - Local Area Network - Локальная сеть
 
-* A LAN is a network that has a logical and physical borders that a computer can broadcast
+* LAN это сеть, которая имеет логические и физические границы, которые компьютер может передавать.
 
 <p align="center">
 <img width="70%" src="https://www.geocities.ws/alcantara97/starhttt.gif" />
 </p>
 
-### WAN - Wide Area Network
+### WAN - Wide Area Network - Глобальная сеть
 
-* WAN is a multiple LANs or additional WANs with routing functionality for interconnectivity.
+* WAN это несколько LAN и/или дополнительных WAN сетей с функцией маршрутизации для обеспечения межсетевого взаимодействия.
 
 <p align="center">
 <img width="70%" src="https://gist.github.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/a3f9b5f3f243467208da83e0d0e543b32233c5d6/wan-topo.jpg" />
 </p>
 
-### MAN - Metropolitan Area Network 
+### MAN - Metropolitan Area Network - Муниципальная сеть
+
+* MAN объединяет компьютеры в пределах города, представляет собой сеть, по размерам меньшую, чем WAN, но большую, чем LAN сети. Они предназначены для обслуживания территории крупного города — мегаполиса.
 
 <p align="center">
 <img width="70%" src="https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/f37cec4e00f726cb4be3661f20ccad77751e003a/man-topo.jpg" />
 </p>
 
-### Internet
-Connecting WANs through WANs until complete the entire world = Internet.
+### Интернет
+Фактически огромное количество WAN сетей, соединённых между собой другими WAN сетями до тех пор, пока весь мир не стал Интернетом.
 
-* The protocol which runs the internet is TCP/IP
-* As long you're using legitimate IPv4 address or IPv6
+* Протокол, по которому работает Интернет, — TCP/IP.
+  >Конечно, если вы используете законный адрес IPv4 или IPv6.
 <p align="center">
 <img width="70%" src="https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/8c176b8a798fb5749c4391c45015ee5d14d56f13/internet.png" />
 </p>
 
-### Intranet
-If you're using the TCP/IP stack and making your own LAN or WAN = Intranet.
+### Интранет
+Если вы используете TCP/IP и делаете собственную LAN или WAN - вы создаёте Интранет.
 
-* Intranet is a private network which still runs TCP/IP
+* Проще говоря, Интранет это частная сеть, которая всё ещё использует TCP/IP
 
 <p align="center">
 <img width="70%" src="https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/8c176b8a798fb5749c4391c45015ee5d14d56f13/intranet.png" />
 </p>
 
-## Common Terms in Networking
-* **IP (internet protocol) address**: the network address of the system across the network, which is also known as the Logical Address).
+## Общая сетевая терминология
+* **IP (Internet Protocol) адрес**: сетевой адрес системы в сети, который также известен как логический адрес.
 
-* **MAC address**: the MAC address or physical address uniquely identifies each host. It is associated with the Network Interface Card (NIC).
+* **MAC адрес**: MAC-адрес или физический адрес однозначно идентифицируют каждый хост. Он связан с сетевой интерфейсной картой (Network Interface Card - NIC).
 
-* **Open system**: an open system is connected to the network and prepared for communication.
+* **Открытая система**: открытая система подключена к сети и подготовлена ​​к подключению.
 
-* **Closed system**: a closed system is not connected to the network and so can't be communicated with.
+* **Закрытая система**: закрытая система не подключена к сети, следовательно к ней невозможно подключиться.
 
-* **Port**: a port is a channel through which data is sent and received.
+* **Порт**: порт - это канал через который информация может быть получена и отправлена.
 
-* **Nodes**: nodes is a term used to refer to any computing devices such as computers that send and receive network packets across the network.
+* **Узлы**: узл — это термин, используемый для обозначения любых вычислительных устройств, таких как компьютеры, которые отправляют и получают сетевые пакеты по сети.
 
-* **Network packets**: the data that is sent to and from the nodes in a network.
+* **Сетвые пакеты**: информация, которая принимается и отправляется по сети через узлы.
 
-* **Routers**: routers are pieces of hardware that manage router packets. They determine which node the information came from and where to send it to. A router has a routing protocol which defines how it communicates with other routers.
+* **Роутеры**: маршрутизатор — это аппаратное оборудование, которое управляет пакетами. Он определяет, из какого узла пришла информация и куда ее отправить. Маршрутизатор имеет протокол маршрутизации, который определяет, как он взаимодействует с другими маршрутизаторами.
 
 * **‍Network address translation (NAT)**: a technique that routers use to provide internet service to more devices using fewer public IPs. A router has a public IP address but devices connected to it are assigned private IPs that others outside of the network can't see.
 
