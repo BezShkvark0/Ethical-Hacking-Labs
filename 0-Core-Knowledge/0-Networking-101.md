@@ -87,89 +87,89 @@
 
 * **‍Преобразование сетевых адресов (‍Network address translation - NAT)**: метод, который маршрутизаторы используют для предоставления интернет-услуг большему количеству устройств с использованием меньшего количества общедоступных IP-адресов. Маршрутизатор имеет общедоступный IP-адрес, но устройствам, подключенным к нему, назначаются частные IP-адреса, которые не могут видеть другие люди за пределами конкретной сети.
 
-* ** Протокол динамической конфигурации хоста (Dynamic host configuration protocol - DHCP)**: назначает хостам динамические IP-адреса и поддерживается интернет-провайдером.
+* **Протокол динамической конфигурации хоста (Dynamic host configuration protocol - DHCP)**: назначает хостам динамические IP-адреса и поддерживается интернет-провайдером.
 
-* **Internet service providers (ISP)**: companies that provide everyone with their internet connection, both to individuals and to businesses and other organizations.
+* **Интернет провайдеры (Internet service providers - ISP)**: компании, которые предоставляют интернет соединение, как обычным людям, так и другим компаниям/организациям.
 
 # 2. IP и MAC адреса
-## What is an IP Address (Internet Protocol)?
+## Что такое IP адрес (Internet Protocol)?
 ![ip](https://media.fs.com/images/community/upload/wangEditor/201912/24/_1577182449_2uLs0pQcuT.jpg)
 
-An IP address is a unique address that identifies a device on the internet or a local network. IP stands for "Internet Protocol," which is the set of rules governing the format of data sent via the internet or local network.
+IP адрес это уникальный адрес, который идентифицирует устройство в интернете или локальной сети. IP происходит от "Интернет Протокол", который обозначает набор правил, регулирующих формат данных отправляемых через интернет или локальную сеть.
 
-## Check your local IP address
+## Проверяем свой локальный IP адрес
 
-1. If you are using Linux or MacOS you can open your terminal and type `ifconfig` command
-2. For Windows machine you can open up the cmd prompt or powershell, then type `ipconfig /all`
+1. Если вы используете Linux или MacOS, то вам нужно открыть свой терминал и напечатать команду `ifconfig` 
+2. Если вы используете Windows, то вам нужно отрыть командную строку, или powershell и напечатать команду `ipconfig /all`
 
 ![inet](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/5a56240010acbc33026413ad6b5c6f66e9450413/inet.png)
 
 - inet IPv4: `192.168.64.3`
-   - `inet` --> The inet (Internet protocol family) show the local IP address. This is IP version 4 (IPv4) Using 32-bit decimal number.
+   - `inet` --> inet (Internet protocol family) показывает локальный IP адрес. Это IP 4ой версии (IPv4), использующий 32-битное десятичное число.
 - inet6 IPv6: `fe80::c83b:ccff:fe0e:1069`
+   - `inet6` --> Это IP 6ой версии (IPv6), использующий 128-битное шестнадцатеричное значение.
+- `ether` --> MAC адрес - уникальный идентификатор присвоенный контроллеру сетевого интерфейса (network interface controller - NIC)
 
-   - `inet6` --> Is a new version of IP (IPv6), using 128 bits hexadecimal value.
-- `ether` --> MAC address - unique identifier assigned to a network interface controller (NIC)
-
-## More about the IPv4 decimal value:
+## Подробнее о десятичном значении IPv4:
 
 ``` 
-IPv4 = 32 bits range (4 octets of 8 bits, from 0-255 each(4))
+IPv4 = диапазон 32 бита (4 октета по 8 бит, от 0 до 255 каждый)
 
-11000000.10101000.01000000.00000011   [IPv4 binary]
-   192  .   168  .   64   .  3        [IPv4 decimal]
+11000000.10101000.01000000.00000011   [IPv4 двоичное значение]
+   192  .   168  .   64   .  3        [IPv4 десятичное значение]
 ``` 
 
-### The arithmetic behind IPv4:
+### Арифметика, стоящая за IPv4:
 
-- One octet have 8 bits:
+- В одном октете 8 бит:
 
-0 or 1 | 0 or 1 | 0 or 1 | 0 or 1 | 0 or 1 | 0 or 1 | 0 or 1 | 0 or 1 
+0 или 1 | 0 или 1 | 0 или 1 | 0 или 1 | 0 или 1 | 0 или 1 | 0 или 1 | 0 или 1 
 -|-|-|-|-|-|-|-
-8th bit | 7th bit | 6th bit | 5th bit | 4th bit | 3rd bit | 2nd bit | 1st bit
+8ой бит | 7ой бит | 6ой бит | 5ой бит | 4ой бит | 3ий бит | 2ой бит | 1ый бит
 128 (2^7) | 64 (2^6) | 32 (2^5) | 16 (2^4) | 8 (2^3) | 4 (2^2) | 2 (2^1) | 1 (2^0)
 
-Here is how binary octets convert to decimal: The right most bit, or least significant bit, of an octet holds a value of 2^0. The bit just to the left of that holds a value of 2^1. This continues until the left-most bit, or most significant bit, which holds a value of 2^7. So if all binary bits are a one, the decimal equivalent would be 255 as shown here:
+Вот как двоичные октеты преобразуются в десятичные: Самый правый или наименее значимый бит октета содержит значение 2^0. Бит слева от него содержит значение 2^1. Это продолжается до тех пор, пока не появится самый левый или самый значимый бит, который содержит значение 2^7. Итак, если все двоичные биты равны единице, десятичный эквивалент будет равен 255, как показано здесь:
 
 ```
   1   1   1   1   1   1   1   1
   |   |   |   |   |   |   |   |
 (128 +64 +32 +16 +8  +4  +2  +1) --> 255 
 
-Example of octet conversion:
-IP Address: 192.168.64.3
+Пример преобразования октетов:
+IP Aадрес: 192.168.64.3
 
-To calculate the first octet (192.), from binary format to decimal:
+
+Чтобы вычислить первый октет (192.), из двоичного формата в десятичный:
 
 128  64  32  16  8   4   2   1         
  |   |   |   |   |   |   |   |
  1   1   0   0   0   0   0   0          
  |   |   |   |   |   |   |   |
-128+ 64+ 0+  0+  0+  0+  0+  0 = 192   ---> final value (firt octet IPv4 in decimal)
-
+128+ 64+ 0+  0+  0+  0+  0+  0 = 192   ---> итоговое значение (первый октет IPv4 в десятичном формате)
 ```
-* Take the IP: `192.168.64.3`
-* The first octet `192` in 8-bit binary is `11000000`.
-* Only the `8th` and `7th` bit is on and the rest of them (`6th to 1st bit`) is off, meaning the decimal value is the final sum of these values:  `128 + 64 = 192`
 
-⚠️ **Why? Computers see everything in terms of binaryll; on and off.**
+* Возьмём следующий IP: `192.168.64.3`
+* Первый октет `192` в 8-битном двоичном формате будет `1100 0000`.
+* Включены только `8-й` и `7-й бит`, а остальные (биты с `6-го по 1-й`) выключены. Это означает, что десятичное значение представляет собой окончательную сумму этих значений: `128 + 64 = 192`
+
+⚠️ **Почему? Компьютеры видят все в двоичном формате; включить и выключить.**
 
 
-## IPv4 and IPv6
+## IPv4 и IPv6
 ![ipv](https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/IPv4%20vs.%20IPv6%20What%E2%80%99s%20the%20Difference/IPv4-vs-IPv6.png?width=2750&name=IPv4-vs-IPv6.png)
 
-## Private and Public IP Addresses
-All IPv4 addresses can be divided into two major groups: **global (or public, external)** - this group can also be called 'WAN addresses' — those that are used on the Internet, and **private (or local, internal) addresses** — those that are used in the local network (LAN).
+## Частные and Публичные IP адреса
+Все IPv4 адреса можно поделить на две основные группы: **глобальные (или публичные, внешние)** - эта группа также называется "WAN addresses" — те, что используются в интернете, и **частные (или локальные, внутренние) адреса** — те, что используются в локальной сети(LAN).
 
 ![priv-pub](https://wiki.teltonika-networks.com/wikibase/images/thumb/a/a7/Sip.png/1100px-Sip.png)
 
-## More about **Private IP** addresses:
-Private (internal) addresses are not routed on the Internet and no traffic can be sent to them from the Internet, they only supposed to work within the local network.
-Private addresses include IP addresses from the following subnets:
+## Подробнее о **Частных IP** адресах:
+Приватные (внутренние) адреса не маршрутизируются в интернете и на них не может быть отправлен трафик из интернета, они предполагались только для работы внутри локальной сети.
+Частные адреса включают в себя IP адреса из следующих подсетей:
 
 ![private-ip](https://66.media.tumblr.com/02a533c1d55ca0ba83e0176168df06ec/tumblr_inline_o4m1taQugo1u4ytoo_1280.jpg)
 
-## NAT - Network Address Translation
+## Преобразование сетевых адресов (‍Network address translation - NAT)
 NAT stands for network address translation. It’s a way to map multiple local private addresses to a public one before transferring the information. Organizations that want multiple devices to employ a single IP address use NAT, as do most home routers. 
 
 ![nat2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/8275f73b57bdcb982b1d69aa8d213d2bdb384657/nat2.png)
