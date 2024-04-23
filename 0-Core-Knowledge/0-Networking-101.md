@@ -68,7 +68,7 @@
 <img width="70%" src="https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/8c176b8a798fb5749c4391c45015ee5d14d56f13/intranet.png" />
 </p>
 
-## Общая сетевая терминология
+## Обще-сетевая терминология
 * **IP (Internet Protocol) адрес**: сетевой адрес системы в сети, который также известен как логический адрес.
 
 * **MAC адрес**: MAC-адрес или физический адрес однозначно идентифицируют каждый хост. Он связан с сетевой интерфейсной картой (Network Interface Card - NIC).
@@ -83,11 +83,11 @@
 
 * **Сетвые пакеты**: информация, которая принимается и отправляется по сети через узлы.
 
-* **Роутеры**: маршрутизатор — это аппаратное оборудование, которое управляет пакетами. Он определяет, из какого узла пришла информация и куда ее отправить. Маршрутизатор имеет протокол маршрутизации, который определяет, как он взаимодействует с другими маршрутизаторами.
+* **Роутеры**: Роутер (он же маршрутизатор) — это аппаратное оборудование, которое управляет пакетами. Он определяет, из какого узла пришла информация и куда ее отправить. Маршрутизатор имеет протокол маршрутизации, который определяет, как он взаимодействует с другими маршрутизаторами.
 
-* **‍Network address translation (NAT)**: a technique that routers use to provide internet service to more devices using fewer public IPs. A router has a public IP address but devices connected to it are assigned private IPs that others outside of the network can't see.
+* **‍Преобразование сетевых адресов (‍Network address translation - NAT)**: метод, который маршрутизаторы используют для предоставления интернет-услуг большему количеству устройств с использованием меньшего количества общедоступных IP-адресов. Маршрутизатор имеет общедоступный IP-адрес, но устройствам, подключенным к нему, назначаются частные IP-адреса, которые не могут видеть другие люди за пределами конкретной сети.
 
-* **Dynamic host configuration protocol (DHCP)**: assigns dynamic IP addresses to hosts and is maintained by the internet service provider.
+* ** Протокол динамической конфигурации хоста (Dynamic host configuration protocol - DHCP)**: назначает хостам динамические IP-адреса и поддерживается интернет-провайдером.
 
 * **Internet service providers (ISP)**: companies that provide everyone with their internet connection, both to individuals and to businesses and other organizations.
 
