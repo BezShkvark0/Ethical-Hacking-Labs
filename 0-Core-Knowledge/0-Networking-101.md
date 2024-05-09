@@ -174,7 +174,7 @@ NAT расшифровывается как сетевая адресная тр
 
 ![nat2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/8275f73b57bdcb982b1d69aa8d213d2bdb384657/nat2.png)
 
-1. **Static NAT**
+1. **Статичный NAT**
 
    When the local address is converted to a public one, this NAT chooses the same one. This means there will be a consistent public IP address associated with that router or NAT device.
 
