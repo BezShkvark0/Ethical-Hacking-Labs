@@ -170,7 +170,7 @@ IP Aадрес: 192.168.64.3
 ![private-ip](https://66.media.tumblr.com/02a533c1d55ca0ba83e0176168df06ec/tumblr_inline_o4m1taQugo1u4ytoo_1280.jpg)
 
 ## Преобразование сетевых адресов (‍Network address translation - NAT)
-NAT расшифровывается как сетевая адресная трансляция. It’s a way to map multiple local private addresses to a public one before transferring the information. Organizations that want multiple devices to employ a single IP address use NAT, as do most home routers. 
+NAT расшифровывается как сетевая адресная трансляция. Фактически, это просто способ соединения нескольких локальных частных адрессов с общедоступным, прежде чем передавать информацию. Организации, которым нужно использовать один IP адрес на множестве устройств используют NAT, так же как домашние роутеры. 
 
 ![nat2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/8275f73b57bdcb982b1d69aa8d213d2bdb384657/nat2.png)
 
